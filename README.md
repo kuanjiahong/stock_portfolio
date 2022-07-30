@@ -10,7 +10,8 @@ This is a django project
 5. Generate a secret key for `DJANGO_SETTINGS_SECRET_KEY` using whatever method you prefer.
 
 ## How to run the website
-1. `python manage.py runserver`
+1. Make migration: `python manage.py migrate `
+2. Start server: `python manage.py runserver`
 
 # Notes
 1. The timezone for this project is set to "America/New_York" to make it easier to follow NYSE time
