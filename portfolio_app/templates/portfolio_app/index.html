@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <div>
+        {% if latest_transactions_list %}
+            <table>
+                <thead>
+                    <tr>
+                        <th>Purchased On</th>
+                        <th>Stock Symbol</th>
+                        <th>Purchase price</th>
+                        <th>Quantity</th>
+                        <th>Total Cost</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for transaction in latest_transactions_list %}
+                        <tr>
+                            <td>{{ transaction.purchased_timestamp }}</td>
+                            <td>{{ transaction.stock_symbol }}</td>
+                            <td>{{ transaction.purchased_price }}</td>
+                            <td>{{ transaction.quantity }}</td>
+                            <td>{{ transaction.total_cost }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <p>No transactions made</p>
+        {% endif %}
+    </div>
+</body>
+</html>
