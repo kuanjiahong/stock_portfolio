@@ -11,3 +11,5 @@ This is a django project
 
 ## How to run the website
 1. `python manage.py runserver`
+
+*Data provided by Financial Modeling Prep*
