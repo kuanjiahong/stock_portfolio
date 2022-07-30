@@ -8,3 +8,7 @@ class Portfolio(models.Model):
     purchased_price = models.DecimalField(max_digits=6, decimal_places=6, validators=[validate_positive_number])
     quantity = models.IntegerField(validators=[validate_positive_number])
     purchased_timestamp = models.DateTimeField('purchased_timestamp')
+
+    class Meta:
+        # This model is linked to this db_table
+        db_table = "tbl_portfolio"
