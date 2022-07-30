@@ -1,8 +1,14 @@
+from django.http import HttpRequest
 from django.shortcuts import render
-from django.http import HttpResponse, HttpRequest
+
+from .models import Portfolio
 
 
 def index(request: HttpRequest):
     """Home page of portfolio app"""
 
-    return HttpResponse("Hello, world. You're at the portfolio index.")
+    latest_transactions_list = Portfolio.objects.order_by('-purchased_timestamp')
+
+    context = {'latest_transactions_list': latest_transactions_list}
+
+    return render(request, 'portfolio_app/index.html', context)
