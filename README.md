@@ -14,6 +14,6 @@ This is a django project
 2. Start server: `python manage.py runserver`
 
 # Notes
-1. The timezone for this project is set to "America/New_York" to make it easier to follow NYSE time
+1. The timezone for this project is set to "UTC"
 
 *Data provided by [Financial Modeling Prep](https://site.financialmodelingprep.com/developer/docs/)*
