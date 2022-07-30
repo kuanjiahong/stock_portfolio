@@ -12,4 +12,7 @@ This is a django project
 ## How to run the website
 1. `python manage.py runserver`
 
+# Notes
+1. The timezone for this project is set to "America/New_York" to make it easier to follow NYSE time
+
 *Data provided by [Financial Modeling Prep](https://site.financialmodelingprep.com/developer/docs/)*
