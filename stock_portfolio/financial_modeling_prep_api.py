@@ -13,7 +13,7 @@ API_ADDRESS = "https://financialmodelingprep.com/api/v3/"
 
 def get_stock_price(stock_symbol: str) -> object:
     """
-    Buy stock
+    Get price of stock
 
     :param stock_symbol: the stock symbol to buy e.g. AAPL
     :return: {"symbol": str, "price": number, "volume": number}
