@@ -5,4 +5,4 @@
 /*.pyc
 /__pycache__
 /media
-/google_api_credentials.json
+/helpers/google_api_helper/google_api_credentials.json
