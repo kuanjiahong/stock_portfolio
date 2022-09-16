@@ -15,7 +15,6 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from portfolio_app import views
 
 urlpatterns = [
     path('portfolio_app/', include('portfolio_app.urls')),
