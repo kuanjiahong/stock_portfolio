@@ -1,7 +1,7 @@
 """A module to read google sheets"""
 from typing import List
 
-from auth import spreadsheet_service
+from helpers.google_api_helper.auth import spreadsheet_service
 from googleapiclient.errors import HttpError
 import os
 from dotenv import load_dotenv
